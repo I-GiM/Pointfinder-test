@@ -13,18 +13,394 @@
     <!-- Website title-->
     <title>Home Page + Full Height Image – Point Finder Multi Category Directory Demo</title>
     <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon" />
-    <link rel="apple-touch-icon-precomposed" href="" />
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:ital,wght@0,600;1,400&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!-- CSS links-->
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/f183ac83e2.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="">
+      <header>
+        <div class="fixed">
+          <div class="social-banner-wrap d-flex align-items-center justify-content-between">
+            <div class="social-banner d-flex align-items-center">
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fab fa-facebook-f"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fab fa-twitter"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fab fa-pinterest-p"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fab fa-instagram"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fas fa-rss"></i></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fas fa-phone-square-alt"></i><span class="ml-1 d-none d-lg-block">001 (123) 123 12 34</span></a>
+              <a href="" class="d-flex align-items-center justify-content-center social-banner--link"><i class="fas fa-envelope"></i><span class="ml-1 d-none d-lg-block">info@pointfndertheme.com</span></a>
+            </div>
+            <div class="d-flex algn-items-center">
+              <a href="" class="d-flex align-items-center justify-content-center px-2 social-banner--auth-link"><i class="d-none d-lg-block fas fa-sign-in-alt"></i><span class="ml-1 d-none d-lg-block">Login</span></a>
+              <a href="" class="d-flex align-items-center justify-content-center px-2 social-banner--auth-link"><i class="d-none d-lg-block fas fa-user-plus"></i><span class="ml-1 d-none d-lg-block">Register</span></a>
+              <a href="" class="d-flex align-items-center justify-content-center px-2 social-banner--auth-link"><i class="d-none d-lg-block fas fa-question-circle"></i><span class="ml-1 d-none d-lg-block">Forgot Password</span></a>
+            </div>
+          </div>
+          <nav class="nav-wrap d-flex align-items-center justify-content-between">
+            <div class="logo-wrap">
+              <img src="./assets/images/LOGO2.png" alt="logo" class="" />
+            </div>
+            <div class="d-flex align-items-center">
+              <div onclick="openSideNav()" class="d-lg-none border rounded nav-wrap--icons d-flex align-items-center justify-content-center mr-2"><i class="fas fa-bars"></i></div>
+              <div onclick="openSideAuth()" class="d-lg-none border rounded nav-wrap--icons d-flex align-items-center justify-content-center"><i class="fas fa-user-alt"></i></div>
+              <div class="d-none d-lg-flex">
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Home Styles</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="flex-column bg-white home-dropdown">
+                    <a class="dropdown--item d-inline-block p-2">Home v2: Mini Search + Video BG</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v3: Full Height Map</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v4: Transparent Header</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v5: Item Slider</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v6: Revolution Slider</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v7: Image BG + Map</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v8: Basic Map</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v9: Horizontal Search</a>
+                    <a class="dropdown--item d-inline-block p-2">Home v10: Full Height Image</a>
+                  </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap">
+                  <span class="mr-1">Features</span>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Shortcodes</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="py-2 flex-row bg-white home-dropdown shortcode-dropdown">
+                    <div class="d-flex flex-column ml-4 mr-2 shortcode-item">
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-table mr-2"></i>Pointfinder Grid</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-map-marker-alt mr-2"></i>Pointfinder Directory Map</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-bars mr-2"></i>Pointfinder Directory List</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-search mr-2"></i>Pointfinder Mini Search</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-expand-alt mr-2"></i>Pointfinder Item Slider</a>
+                    </div>
+                    <div class="d-flex flex-column mx-2 shortcode-item">
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-grip-lines-vertical mr-2"></i>Pointfinder Property Carousel</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-sliders-h mr-2"></i>Pointfinder Client Carousel</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-bullhorn mr-2"></i>Pointfinder Contact Map</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-file-alt mr-2"></i>Pointfinder Contact Form</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-images mr-2"></i>Image Carousel</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-image mr-2"></i>Gallery</a>
+                    </div>
+                    <div class="d-flex flex-column mx-2 shortcode-item">
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chart-pie mr-2"></i>Pie Charts</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-heart mr-2"></i>Testimonials</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-border-none mr-2"></i>Dividers</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-images mr-2"></i>Images</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-images mr-2"></i>Progress Bars</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-film mr-2"></i>Videos</a>
+                    </div>
+                    <div class="d-flex flex-column ml-2 mr-4 shortcode-item">
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-ellipsis-h mr-2"></i>Infobox</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-puzzle-piece mr-2"></i>Tabs & Tours</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-music mr-2"></i>Toggle & Accordion</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-smile mr-2"></i>Callout Boxes</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-images mr-2"></i>Post Slider</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-table mr-2"></i>Post Grid</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Categories</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="py-2 flex-row flex-wrap bg-white home-dropdown categories-dropdown">
+                    <div class="d-flex flex-column ml-4 mr-2 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-graduation-cap mr-2"></i>Education</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Teaching</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Audio & Stereo</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>IT & Software</a>
+                    </div>
+                    <div class="d-flex flex-column mx-2 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-hotel mr-2"></i>Hotels & Travels</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Events</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Tour Packages</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Hotels</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Nightlife</a>
+                    </div>
+                    <div class="d-flex flex-column mx-2 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-heart mr-2"></i>Pets</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Birds</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Cats</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Dogs</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Equipments</a>
+                    </div>
+                    <div class="d-flex flex-column ml-2 mr-4 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-layer-group mr-2"></i>Jobs</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Accountacy</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Babysitting</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Banking</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Management</a>
+                    </div>
+                    <div class="d-flex flex-column ml-2 mr-4 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-cog mr-2"></i>Cars</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Auto Parts</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Car Spare Parts</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Cars</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Motorbikes</a>
+                    </div>
+                    <div class="d-flex flex-column ml-2 mr-4 shortcode-item">
+                      <span class="dropdown--item d-inline-block p-2 font-weight-bold border-bottom"><i class="fas fa-search-plus mr-2"></i>Real Estate</span>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>For Sale</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>To Rent</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>To Share</a>
+                      <a class="dropdown--item d-inline-block p-2"><i class="fas fa-chevron-right mr-2"></i>Land & Estates</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Listings</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="flex-column bg-white home-dropdown">
+                    <a class="dropdown--item d-inline-block p-2">Listing with Image Header</a>
+                    <a class="dropdown--item d-inline-block p-2">Listing with No Header</a>
+                    <a class="dropdown--item d-inline-block p-2">Listing with Deafault Header</a>
+                    <a class="dropdown--item d-inline-block p-2">Listing with Directory Map</a>
+                  </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Pages</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="flex-column bg-white home-dropdown">
+                    <a class="dropdown--item d-inline-block p-2">Contact Page v1</a>
+                    <a class="dropdown--item d-inline-block p-2">Contact Page v2</a>
+                    <a class="dropdown--item d-inline-block p-2">404 Page</a>
+                  </div>
+                </div>
+                <div class="mx-2 d-flex align-items-center nav-link-wrap nav-link--home">
+                  <span class="mr-1">Blogs</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                  <div class="flex-column bg-white home-dropdown">
+                    <a class="dropdown--item d-inline-block p-2">Blog Full Width</a>
+                    <a class="dropdown--item d-inline-block p-2">Blog Left Sidebar</a>
+                    <a class="dropdown--item d-inline-block p-2">Blog Right Sidebar</a>
+                  </div>
+                </div>
+
+              </div>
+              <a href="" class="ml-2 d-flex align-items-center rounded nav-link-wrap--point">
+                <i class="mt-1 fas fa-plus text-white"></i>
+                <span class="ml-1 text-white">Post New Point</span>
+              </a>
+            </div>
+          </nav>
+
+        </div>
+        <div id="sidebar-wrap" class="sidebar-wrap">
+          <div id="sidebar" class="bg-white sidebar">
+            <div class="logo-wrap px-3 d-flex align-items-center justify-content-between mb-5">
+              <img src="./assets/images/LOGO2.png" alt="logo" class="" />
+              <span class="closebtn" onclick="closeSideNav()"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="home-title" onclick="openHome()">
+                  <span class="mr-1 pb-4 small">Home Styles</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="home-dropdown" class="flex-column d-none pl-4">
+                  <a class="small d-inline-block p-2">Home v2: Mini Search + Video BG</a>
+                  <a class="small d-inline-block p-2">Home v3: Full Height Map</a>
+                  <a class="small d-inline-block p-2">Home v4: Transparent Header</a>
+                  <a class="small d-inline-block p-2">Home v5: Item Slider</a>
+                  <a class="small d-inline-block p-2">Home v6: Revolution Slider</a>
+                  <a class="small d-inline-block p-2">Home v7: Image BG + Map</a>
+                  <a class="small d-inline-block p-2">Home v8: Basic Map</a>
+                  <a class="small d-inline-block p-2">Home v9: Horizontal Search</a>
+                  <a class="small d-inline-block p-2">Home v10: Full Height Image</a>
+                </div>
+              </div>
+              <div class="d-flex px-3 flex-column sidebar-item" id="features-title">
+                <a href="" class="mr-1 pb-4 small text-decoration-none">Features</a>
+              </div>
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="codes-title" onclick="openCode()">
+                  <span class="mr-1 pb-4 small">Shortcodes</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="shortcodes-dropdown" class="flex-column d-none pl-4">
+                  <div class="d-flex flex-column shortcode-item">
+                    <a class="small d-inline-block p-2">Pointfinder Grid</a>
+                    <a class="small d-inline-block p-2">Pointfinder Directory Map</a>
+                    <a class="small d-inline-block p-2">Pointfinder Directory List</a>
+                    <a class="small d-inline-block p-2">Pointfinder Mini Search</a>
+                    <a class="small d-inline-block p-2">Pointfinder Item Slider</a>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <a class="small d-inline-block p-2">Pointfinder Property Carousel</a>
+                    <a class="small d-inline-block p-2">Pointfinder Client Carousel</a>
+                    <a class="small d-inline-block p-2">Pointfinder Contact Map</a>
+                    <a class="small d-inline-block p-2">Pointfinder Contact Form</a>
+                    <a class="small d-inline-block p-2">Image Carousel</a>
+                    <a class="small d-inline-block p-2">Gallery</a>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <a class="small d-inline-block p-2">Pie Charts</a>
+                    <a class="small d-inline-block p-2">Testimonials</a>
+                    <a class="small d-inline-block p-2">Dividers</a>
+                    <a class="small d-inline-block p-2">Images</a>
+                    <a class="small d-inline-block p-2">Progress Bars</a>
+                    <a class="small d-inline-block p-2">Videos</a>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <a class="small d-inline-block p-2">Infobox</a>
+                    <a class="small d-inline-block p-2">Tabs & Tours</a>
+                    <a class="small d-inline-block p-2">Toggle & Accordion</a>
+                    <a class="small d-inline-block p-2">Callout Boxes</a>
+                    <a class="small d-inline-block p-2">Post Slider</a>
+                    <a class="small d-inline-block p-2">Post Grid</a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="categories-title" onclick="openCategories()">
+                  <span class="mr-1 pb-4 small">Categories</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="categories-dropdown" class="flex-column d-none pl-4">
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-education" onclick="openEducation()">
+                      <span class="mr-1 py-2 small">Education</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="education-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">Teaching</a>
+                      <a class="small d-inline-block p-2">Audio & Stereo</a>
+                      <a class="small d-inline-block p-2">It & Software</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-hotel" onclick="openHotel()">
+                      <span class="mr-1 py-1 small">Hotels & Travels</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="hotel-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">Events</a>
+                      <a class="small d-inline-block p-2">Tour Packages</a>
+                      <a class="small d-inline-block p-2">Hotels</a>
+                      <a class="small d-inline-block p-2">Nightlife</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-pets" onclick="openPets()">
+                      <span class="mr-1 py-1 small">Pets</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="pets-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">Birds</a>
+                      <a class="small d-inline-block p-2">Cats</a>
+                      <a class="small d-inline-block p-2">Dogs</a>
+                      <a class="small d-inline-block p-2">Equipments</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-jobs" onclick="openJobs()">
+                      <span class="mr-1 py-1 small">Jobs</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="jobs-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">Accountacy</a>
+                      <a class="small d-inline-block p-2">Babysitting</a>
+                      <a class="small d-inline-block p-2">Banking</a>
+                      <a class="small d-inline-block p-2">Management</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-cars" onclick="openCars()">
+                      <span class="mr-1 py-1 small">Cars</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="cars-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">Auto Parts</a>
+                      <a class="small d-inline-block p-2">Car Spare Parts</a>
+                      <a class="small d-inline-block p-2">Cars</a>
+                      <a class="small d-inline-block p-2">Motorbikes</a>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-column shortcode-item">
+                    <div class="d-flex px-3 justify-content-between" id="categories-estate" onclick="openEstate()">
+                      <span class="small mr-1 py-1">Real Estate</span>
+                      <i class="pt-2 mt-1 fas fa-chevron-down"></i>
+                    </div>
+                    <div id="estate-dropdown" class="flex-column d-none pl-5">
+                      <a class="small d-inline-block p-2">For Sale</a>
+                      <a class="small d-inline-block p-2">To Rent</a>
+                      <a class="small d-inline-block p-2">To Share</a>
+                      <a class="small d-inline-block p-2">Land & Estates</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="listings-title" onclick="openListings()">
+                  <span class="mr-1 pb-4 small">Listings</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="listings-dropdown" class="flex-column d-none pl-4">
+                  <a class="d-inline-block p-2 small">Listing with Image Header</a>
+                  <a class="d-inline-block p-2 small">Listing with No Header</a>
+                  <a class="d-inline-block p-2 small">Listing with Default Header</a>
+                  <a class="d-inline-block p-2 small">Listing with Directory Map</a>
+                </div>
+              </div>
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="pages-title" onclick="openPages()">
+                  <span class="mr-1 pb-4 small">Pages</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="pages-dropdown" class="flex-column d-none pl-4">
+                  <a class="d-inline-block p-2 small">Contact Page v1</a>
+                  <a class="d-inline-block p-2 small">Contact Page v2</a>
+                  <a class="d-inline-block p-2 small">404 Page</a>
+                </div>
+              </div>
+              <div class="d-flex flex-column sidebar-item">
+                <div class="d-flex px-3 justify-content-between" id="blogs-title" onclick="openBlogs()">
+                  <span class="mr-1 pb-4 small">Blogs</span>
+                  <i class=" mt-1 fas fa-chevron-down"></i>
+                </div>
+                <div id="blogs-dropdown" class="flex-column d-none pl-4">
+                  <a class="d-inline-block p-2 small">Blog Full Width</a>
+                  <a class="d-inline-block p-2 small">Blog Left Sidebar</a>
+                  <a class="d-inline-block p-2 small">Blog Right Sidebar</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div id="sideauth-wrap" class="sidebar-wrap">
+          <div id="sideauth" class="bg-white sidebar">
+            <div class="logo-wrap px-3 d-flex align-items-center justify-content-between mb-5">
+              <img src="./assets/images/LOGO2.png" alt="logo" class="" />
+              <span class="closebtn" onclick="closeSideAuth()"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="d-flex flex-column">
+              <div class="d-flex align-items-center my-3 px-3 sidebar-item" id="features-title">
+                <i class="fas fa-sign-in-alt mr-2"></i>
+                <a href="" class="mr-1 small text-decoration-none">Login</a>
+              </div>
+              <div class="d-flex align-items-center my-3 px-3 sidebar-item" id="features-title">
+                <i class="mr-2 fas fa-user-plus"></i>
+                <a href="" class="mr-1 small text-decoration-none">Register</a>
+              </div>
+              <div class="d-flex align-items-center my-3 px-3 sidebar-item" id="features-title">
+                <i class="mr-2 fas fa-question-circle"></i>
+                <a href="" class="mr-1 small text-decoration-none">Forgot Password</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
 
     <!-- All javascript at the bottom of the page for fast page load -->
     <script src="./assets/js/jquery.js"></script>
     <script src="./assets/js/popper.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

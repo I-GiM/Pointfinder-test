@@ -1,1 +1,229 @@
 /* Style for the page */
+/* Social Banner */
+.social-banner-wrap {
+  background-color: #2B78AA;
+  padding: 0 15px;
+}
+@media (min-width: 768px) {
+  .social-banner-wrap {
+    padding: 0 5%;
+  }
+}
+
+.social-banner {
+  height: 30px;
+}
+
+.social-banner--link {
+  color: #f9f9f9;
+  width: 30px;
+  height: 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+.social-banner--link:nth-child(n+1):nth-child(-n+7) {
+  border-right: none;
+}
+.social-banner--link:hover {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+@media (min-width: 992px) {
+  .social-banner--link.social-banner--link:nth-child(7) {
+    width: 150px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+  .social-banner--link.social-banner--link:nth-child(8) {
+    width: 200px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+
+.social-banner--auth-link {
+  color: #f9f9f9;
+  height: 30px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+.social-banner--auth-link:hover {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+@media (min-width: 992px) {
+  .social-banner--auth-link:nth-child(2) {
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+
+/* Nav Bar */
+.nav-wrap {
+  height: 65px;
+  padding: 0 15px;
+}
+@media (min-width: 576px) {
+  .nav-wrap {
+    padding: 0 5%;
+    height: 90px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-wrap {
+    padding: 0 5%;
+  }
+}
+
+.logo-wrap img {
+  height: 20px;
+}
+@media (min-width: 576px) {
+  .logo-wrap img {
+    height: 30px;
+  }
+}
+
+.nav-wrap--icons {
+  width: 35px;
+  height: 32px;
+}
+
+.nav-link-wrap {
+  height: 90px;
+  cursor: pointer;
+}
+.nav-link-wrap span {
+  color: #595959;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.nav-link-wrap i {
+  color: #595959;
+  font-size: 12px;
+}
+
+.nav-link-wrap--point {
+  background-color: #4881d6;
+  display: none !important;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  padding: 8px 12px;
+  box-sizing: border-box;
+}
+.nav-link-wrap--point:hover {
+  text-decoration: none;
+}
+@media (min-width: 1200px) {
+  .nav-link-wrap--point {
+    display: block !important;
+  }
+}
+
+.nav-link--home .home-dropdown {
+  display: none;
+  position: absolute;
+  top: 120px;
+}
+.nav-link--home:hover {
+  border-bottom: 1px solid #2B78AA;
+}
+.nav-link--home:hover .home-dropdown {
+  display: flex;
+  border-top: 1px solid #2B78AA;
+}
+
+.dropdown--item {
+  color: #595959 !important;
+  font-size: 14px;
+  cursor: pointer;
+}
+.dropdown--item i {
+  color: #595959 !important;
+}
+.dropdown--item:hover {
+  background-color: rgba(89, 89, 89, 0.1);
+  color: #2B78AA !important;
+}
+.dropdown--item:hover i {
+  color: #2B78AA !important;
+}
+
+.shortcode-dropdown {
+  width: 90vw;
+  left: 0;
+  margin: 0 5%;
+}
+.shortcode-dropdown .shortcode-item {
+  width: 300px;
+}
+
+.categories-dropdown {
+  width: 90vw;
+  left: 0;
+  margin: 0 5%;
+}
+.categories-dropdown .shortcode-item {
+  width: 220px;
+}
+
+.sidebar-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.sidebar-wrap .sidebar {
+  width: 0;
+  height: 100%;
+  padding: 50px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+.sidebar-wrap .sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar-item {
+  color: #595959;
+  font-family: "Open Sans", sans-serif;
+}
+.sidebar-item i {
+  color: #595959;
+  font-size: 14px;
+}
+.sidebar-item .sidebar-item--title {
+  border-bottom: 1px solid #2B78AA;
+  color: #2B78AA;
+}
+.sidebar-item .sidebar-item--title i {
+  color: #2B78AA;
+  transform: rotateX(180deg);
+  margin-bottom: 40px;
+}
+.sidebar-item a {
+  color: #595959;
+}
+.sidebar-item a:hover {
+  color: #595959;
+}
+
+#home-title,
+#codes-title {
+  cursor: pointer;
+}
